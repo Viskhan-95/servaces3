@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <link rel="stylesheet" href="./styles.css" />
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="content">
+            <div class="content__title"></div>
+            <div class="content__brands">
+               <div class="swiper">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <img src="./images/acer.png" alt="aser" />
+                        <img src="./images/go.png" alt="arrow" />
+                     </div>
+                     <div class="swiper-slide"><img src="./images/apple.png" alt="apple" /></div>
+                     <div class="swiper-slide"><img src="./images/bosch.png" alt="bosch" /></div>
+                     <div class="swiper-slide"><img src="./images/hp.png" alt="hp" /></div>
+                     <div class="swiper-slide"><img src="./images/lenovo.png" alt="lenovo" /></div>
+                     <div class="swiper-slide"><img src="./images/samsung.png" alt="samsung" /></div>
+                     <div class="swiper-slide"><img src="./images/sony.png" alt="sony" /></div>
+                     <div class="swiper-slide"><img src="./images/viewsonic.png" alt="viewsonic" /></div>
+                     <div class="swiper-slide"><img src="./images/acer.png" alt="aser" /></div>
+                     <div class="swiper-slide"><img src="./images/apple.png" alt="apple" /></div>
+                     <div class="swiper-slide"><img src="./images/bosch.png" alt="bosch" /></div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-scrollbar"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script>
+      const swiper = new Swiper('.swiper', {
+         spaceBetween: 30,
+         navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+         },
+         pagination: {
+            el: '.swiper-pagination',
+         },
+         mousewheel: true,
+         keyboard: true,
+      });
+   </script>
+</html>
